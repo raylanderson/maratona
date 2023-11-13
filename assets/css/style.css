@@ -1,0 +1,14 @@
+/* CSS => Cascading StyleSheet (Folha de estilos em cascata)
+
+Estrutura
+
+Regra CSS: 
+seletor {
+    propriedade: valor; -> declaração
+}
+
+*/
+
+.cabecalho {
+    background-color: brown;
+}
