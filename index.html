@@ -13,77 +13,83 @@
     <header class="cabecalho">
 
         <!--IMAGEM LOGO-->
-        <figure>
+        <figure class="cabecalho__logo">
             <img src="./assets/img/bird 1.svg" alt="Logo Ken-Te-vi">
             <figcaption hidden>Logo Ken-Te-vi</figcaption>
         </figure>
 
         <!--MENU DE NAVEGAÇÃO-->
-        <nav>
+        <nav class="cabecalho__menuNavegacao">
 
             <!--LISTA DE LINKS-->
-            <ul>
-                <li>
+            <ul class="cabecalho__menuLista">
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Home.png" alt="">
                     <a href="#">Página Inicial</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Hashtag.png" alt="">
                     <a href="#">Exportar</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Notification.png" alt="">
                     <a href="#">Notificações</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Group.png" alt="">
                     <a href="#">Mensagens</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Group (1).png" alt="">
                     <a href="#">Itens salvos</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Group (2).png" alt="">
                     <a href="#">Listas</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/ProfilePic.png" alt="">
                     <a href="#">Perfil</a>
                 </li>
-                <li>
+
+                <li class="cabecalho__menuItem">
                     <img src="./assets/img/Group (3).png" alt="">
                     <a href="#">Mais</a>
                 </li>
-                <li>
             </ul>
         </nav>
     </header>
 
     <!--CONTEUDO PRINCIPAL-->
-    <main>
+    <main class="conteudoPrincipal">
 
         <!--TÍTULO-->
-        <h3>Home</h3>
+        <h3 class="conteudoPrincipal__titulo">Home</h3>
 
         <!--FORMULÁRIO-->
-        <form action="#">
+        <form action="#" class="conteudoPrincipal__formulario">
             <textarea name="textoTweet" placeholder="Digite seu texto aqui..."></textarea>
 
             <button type="submit" >Tweetar</button>
         </form>
 
         <!--FEED DE NOTÍCIAS-->
-        <section>
+        <section class="conteudoPrincipal__feed">
 
             <!--LISTA DE NOTÍCIAS-->
-            <ul>
-                <li>
+            <ul class="conteudoPrincipal__listaTweets">
+                <li class="conteudoPrincipal__tweet">
                     <!--IMAGEM DO USUÁRIO-->
                     <img src="./assets/img/ProfilePic.png" alt="Daniel">
 
                     <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
-                    <div>
+                    <div class="tweet__conteudo">
                         <H2>Daniel</H2>
                         <span>@danielKenzie 14s</span>
                         <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
@@ -91,7 +97,7 @@
                 </li>
                 <li>
                     <!--IMAGEM DO USUÁRIO-->
-                    <img src="./assets/img/ProfilePic (1).png" alt="Daniel">
+                    <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic (1).png" alt="Daniel">
 
                     <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
                     <div>
