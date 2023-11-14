@@ -7,8 +7,77 @@ seletor {
     propriedade: valor; -> declaração
 }
 
+CSS BEM
+
+B -> Bloco
+E -> Elemento
+M -> Modificador
 */
 
-.cabecalho {
-    background-color: brown;
+
+/*  BODY */
+body {}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* margin-top: 50px;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;
+    margin: top right bottom left;
+    margin: top right/left bottom;
+    margin: top/bottom right/left;
+    margin: todos os lados; */
 }
+
+/* CABEÇALHO  */
+.cabecalho {
+    flex-basis: 30%;
+}
+.cabecalho__logo {
+    margin-bottom: 50px;
+}
+.cabecalho__logo img {}
+.cabecalho__logo figcaption {
+    display: none;
+}
+
+.cabecalho__menuNavegacao {}
+.cabecalho__menuLista {}
+.cabecalho__menuItem {
+    margin-bottom: 25px;
+}
+.cabecalho__menuItem img {
+    max-width: 26px;
+}
+.cabecalho__menuItem a {
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+
+/*  CONTEÚDO PRINCIPAL  */
+.conteudoPrincipal {
+    flex-basis: 70%;
+}
+.conteudoPrincipal__titulo {}
+
+.conteudoPrincipal__formulario {}
+.conteudoPrincipal__formulario textarea {}
+.conteudoPrincipal__formulario button {}
+
+.conteudoPrincipal__feed {}
+.conteudoPrincipal__listaTweets {}
+.conteudoPrincipal__tweet {}
+
+.tweet__fotoPerfil {}
+.tweet__conteudo {}
+.tweet__conteudo h2 {}
+.tweet__conteudo span {}
+.tweet__conteudo p {}
+

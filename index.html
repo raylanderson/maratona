@@ -3,123 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Ken-Te-Vi</title>
 </head>
 <!--CORPO-->
 <body>
 
-    <!--CABEÇALHO-->
-    <header class="cabecalho">
+    <div class="container">
 
-        <!--IMAGEM LOGO-->
-        <figure class="cabecalho__logo">
-            <img src="./assets/img/bird 1.svg" alt="Logo Ken-Te-vi">
-            <figcaption hidden>Logo Ken-Te-vi</figcaption>
-        </figure>
+        <!--CABEÇALHO-->
+        <header class="cabecalho">
 
-        <!--MENU DE NAVEGAÇÃO-->
-        <nav class="cabecalho__menuNavegacao">
+            <!--IMAGEM LOGO-->
+            <figure class="cabecalho__logo">
+                <img src="./assets/img/bird 1.svg" alt="Logo Ken-Te-vi">
+                <figcaption hidden>Logo Ken-Te-vi</figcaption>
+            </figure>
 
-            <!--LISTA DE LINKS-->
-            <ul class="cabecalho__menuLista">
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Home.png" alt="">
-                    <a href="#">Página Inicial</a>
-                </li>
+            <!--MENU DE NAVEGAÇÃO-->
+            <nav class="cabecalho__menuNavegacao">
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Hashtag.png" alt="">
-                    <a href="#">Exportar</a>
-                </li>
+                <!--LISTA DE LINKS-->
+                <ul class="cabecalho__menuLista">
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Home.png" alt="">
+                        <a href="#">Página Inicial</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Notification.png" alt="">
-                    <a href="#">Notificações</a>
-                </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Hashtag.png" alt="">
+                        <a href="#">Exportar</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Group.png" alt="">
-                    <a href="#">Mensagens</a>
-                </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Notification.png" alt="">
+                        <a href="#">Notificações</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Group (1).png" alt="">
-                    <a href="#">Itens salvos</a>
-                </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group.png" alt="">
+                        <a href="#">Mensagens</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Group (2).png" alt="">
-                    <a href="#">Listas</a>
-                </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (1).png" alt="">
+                        <a href="#">Itens salvos</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/ProfilePic.png" alt="">
-                    <a href="#">Perfil</a>
-                </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (2).png" alt="">
+                        <a href="#">Listas</a>
+                    </li>
 
-                <li class="cabecalho__menuItem">
-                    <img src="./assets/img/Group (3).png" alt="">
-                    <a href="#">Mais</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/ProfilePic.png" alt="">
+                        <a href="#">Perfil</a>
+                    </li>
 
-    <!--CONTEUDO PRINCIPAL-->
-    <main class="conteudoPrincipal">
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (3).png" alt="">
+                        <a href="#">Mais</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <!--TÍTULO-->
-        <h3 class="conteudoPrincipal__titulo">Home</h3>
+        <!--CONTEUDO PRINCIPAL-->
+        <main class="conteudoPrincipal">
 
-        <!--FORMULÁRIO-->
-        <form action="#" class="conteudoPrincipal__formulario">
-            <textarea name="textoTweet" placeholder="Digite seu texto aqui..."></textarea>
+            <!--TÍTULO-->
+            <h3 class="conteudoPrincipal__titulo">Home</h3>
 
-            <button type="submit" >Tweetar</button>
-        </form>
+            <!--FORMULÁRIO-->
+            <form action="#" class="conteudoPrincipal__formulario">
+                <textarea name="textoTweet" placeholder="Digite seu texto aqui..."></textarea>
 
-        <!--FEED DE NOTÍCIAS-->
-        <section class="conteudoPrincipal__feed">
+                <button type="submit" >Tweetar</button>
+            </form>
 
-            <!--LISTA DE NOTÍCIAS-->
-            <ul class="conteudoPrincipal__listaTweets">
-                <li class="conteudoPrincipal__tweet">
-                    <!--IMAGEM DO USUÁRIO-->
-                    <img src="./assets/img/ProfilePic.png" alt="Daniel">
+            <!--FEED DE NOTÍCIAS-->
+            <section class="conteudoPrincipal__feed">
 
-                    <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
-                    <div class="tweet__conteudo">
-                        <H2>Daniel</H2>
-                        <span>@danielKenzie 14s</span>
-                        <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
-                    </div>
-                </li>
-                <li>
-                    <!--IMAGEM DO USUÁRIO-->
-                    <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic (1).png" alt="Daniel">
+                <!--LISTA DE NOTÍCIAS-->
+                <ul class="conteudoPrincipal__listaTweets">
+                    <li class="conteudoPrincipal__tweet">
+                        <!--IMAGEM DO USUÁRIO-->
+                        <img src="./assets/img/ProfilePic.png" alt="Daniel">
 
-                    <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
-                    <div>
-                        <H2>Daniel</H2>
-                        <span>@danielKenzie 14s</span>
-                        <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
-                    </div>
-                </li>
-                <li>
-                    <!--IMAGEM DO USUÁRIO-->
-                    <img src="./assets/img/ProfilePic (2).png" alt="Daniel">
+                        <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
+                        <div class="tweet__conteudo">
+                            <H2>Daniel</H2>
+                            <span>@danielKenzie 14s</span>
+                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!--IMAGEM DO USUÁRIO-->
+                        <img class="tweet__fotoPerfil" src="./assets/img/ProfilePic (1).png" alt="Daniel">
 
-                    <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
-                    <div>
-                        <H2>Daniel</H2>
-                        <span>@danielKenzie 14s</span>
-                        <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
-    
+                        <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
+                        <div>
+                            <H2>Daniel</H2>
+                            <span>@danielKenzie 14s</span>
+                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!--IMAGEM DO USUÁRIO-->
+                        <img src="./assets/img/ProfilePic (2).png" alt="Daniel">
+
+                        <!--CAIXA COM INFORMAÇÕES DU USUÁRIO-->
+                        <div>
+                            <H2>Daniel</H2>
+                            <span>@danielKenzie 14s</span>
+                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 milhão de profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
