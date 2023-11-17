@@ -20,7 +20,7 @@ soma: +
 subtração: -
 multiplicação: *
 divisão: /
-*/
+
 
 let numero2 = 3;
 let numero3 = 5;
@@ -40,7 +40,7 @@ console.log(soma2)
  * < / <=
  * 
  */
-
+/*
 //console.log(numero2 > numero3)
 console.log(!(numero2 > numero3))
 
@@ -56,7 +56,7 @@ function calcularSoma() {
 
 // chamada da fução -> momento em que ela vai ser executada
 calcularSoma();
-*/
+
 
 //declaração apenas
 function calcularSoma(numero1, numero2) {
@@ -66,10 +66,34 @@ function calcularSoma(numero1, numero2) {
 
 // chamada da fução -> momento em que ela vai ser executada
 calcularSoma(7, 10);
+*/
 
 /**
  * DOM
  * Document Object Model (modelo do objeto do documento)
  * 
  */
+/*
+const cabecalho = document.querySelector('header');
 
+console.log(cabacalho);
+*/
+
+/**
+ * 
+ * eventos
+ * 
+ * 
+ * addEventListener
+ * 
+ * elemento.addEventListener('evento', função);
+ * 
+ */
+
+const tweetar = document.querySelector('button')
+
+function imprimirNoConsole() {
+    console.log('Clicou no botão!')
+}
+
+tweetar.addEventListener('click'  imprimirNoConsole);
