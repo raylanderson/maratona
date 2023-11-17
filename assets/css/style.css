@@ -12,17 +12,23 @@ CSS BEM
 B -> Bloco
 E -> Elemento
 M -> Modificador
+
+font-family: 'Roboto', sans-serif;
+
 */
 
 
 /*  BODY */
-body {}
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
+
     /* margin-top: 50px;
     margin-bottom: ;
     margin-left: ;
@@ -97,11 +103,31 @@ body {}
 
 .conteudoPrincipal__feed {}
 .conteudoPrincipal__listaTweets {}
-.conteudoPrincipal__tweet {}
+
+.conteudoPrincipal__tweet {
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e7ecf0;
+}
 
 .tweet__fotoPerfil {}
-.tweet__conteudo {}
-.tweet__conteudo h2 {}
-.tweet__conteudo span {}
-.tweet__conteudo p {}
+
+.tweet__conteudo {
+    margin-left: 15px;
+}
+
+.tweet__conteudo h2 {
+    display: inline-block;
+}
+
+.tweet__conteudo span {
+    display: inline-block;
+    color: #828282b8;
+}
+
+.tweet__conteudo p {
+    margin-top: 15px;
+    color: #333333;
+}
 
