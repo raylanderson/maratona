@@ -89,11 +89,62 @@ console.log(cabacalho);
  * elemento.addEventListener('evento', função);
  * 
  */
-
+/*
 const tweetar = document.querySelector('button')
 
 function imprimirNoConsole() {
     console.log('Clicou no botão!')
 }
 
-tweetar.addEventListener('click'  imprimirNoConsole);
+tweetar.addEventListener('click', imprimirNoConsole);
+*/
+/***
+ * 
+ * 1º Passo: capturar o valor da textarea para criar o tweet
+ * 2º Passo: construir o tweet
+ * 3º Passo: Imprimir esse tweet
+ * 
+ */
+
+const textarea = document.querySelector('textarea');
+const tweetar = document.querySelector('button');
+
+function pegarTweet(event) {
+    event.preventDefault(); 
+
+    const tweetTextarea = textarea.value;
+    criarTweet(tweetTextarea)
+}
+
+tweetar.addEventListener('click', pegarTweet);
+
+function criarTweet(tweetTexto) {
+    console.log(tweetTexto)
+
+    let data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
+    //OBJETO
+    const tweet = {
+        nome: "Raylanderson",
+        foto: "./src/img/profilePic.png",
+        usuario: "@raylandersonKenzie",
+        texto: tweetTexto,
+        tempo: `${hora}:${minutos}`
+    }
+
+    listarTweet(tweet);
+
+}
+
+function listarTweet(tweet) {
+    console.log(tweet)
+}
+
+
+// CRIAR O TWEET
+// TEXTO DO TWEET
+// NOME
+// FOTO
+// NOME USUARIO
+// HORÁRIO
