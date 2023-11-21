@@ -108,6 +108,7 @@ tweetar.addEventListener('click', imprimirNoConsole);
 
 const textarea = document.querySelector('textarea');
 const tweetar = document.querySelector('button');
+const feed = document.querySelector(".conteudoPrincipal__listaTweets")
 
 function pegarTweet(event) {
     event.preventDefault(); 
@@ -127,18 +128,44 @@ function criarTweet(tweetTexto) {
     //OBJETO
     const tweet = {
         nome: "Raylanderson",
-        foto: "./src/img/profilePic.png",
+        foto: "./assets/img/profilePic.png",
         usuario: "@raylandersonKenzie",
         texto: tweetTexto,
         tempo: `${hora}:${minutos}`
     }
 
-    listarTweet(tweet);
+    listarTemplateTweet(tweet);
 
 }
 
-function listarTweet(tweet) {
-    console.log(tweet)
+function listarTemplateTweet(tweet) {
+
+    const {nome, foto, usuario, texto, tempo} = tweet
+
+    //CRIANDO ELEMENTOS PÁRA LISTAR O TEMPLATE
+    let li   = document.createElement("li");
+    let img  = document.createElement("img");
+    img.src = foto
+    let div  = document.createElement("div");
+    let h2   = document.createElement("h2");
+    h2.innerText = nome
+    let span = document.createElement("span");
+    span.innerText = `${usuario} - ${tempo}`
+
+    let p    = document.createElement("p");
+    p.innerText = texto
+
+    //ADICIONANDO ELEMENTOS DENTRO DA DIV
+    let li = document.createElement("li")
+    div.appendChild(h2)
+    div.appendChild(span)
+    div.appendChild(p)
+
+    //ADICIONANDO ELEMENTOS DENTRO DA LI
+    li.appendChild(img)
+    li.appendChild(div)
+
+    feed.appendChild(li)
 }
 
 
